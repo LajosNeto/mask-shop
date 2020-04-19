@@ -13,11 +13,6 @@ import warnings
 if not sys.warnoptions:
     warnings.simplefilter("ignore")
 
-# import tensorflow as tf
-# tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
-
-# import logging
-# logging.getLogger("tensorflow").setLevel(logging.WARNING)
 
 import pandas as pd
 import numpy as np
@@ -65,7 +60,7 @@ def load_dataset():
     return(train_generator, X_test, y_test)
 
 def build_model():
-    model = Sequential(name='Custom 2')
+    model = Sequential(name='custom_2')
     
     model.add(Conv2D(64, (3,3), strides=(1,1), input_shape=(48,48,1), activation='relu'))
     model.add(MaxPool2D(pool_size=(2,2), strides=(2,2)))
