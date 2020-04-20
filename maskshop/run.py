@@ -1,9 +1,16 @@
+"""
+Main camera routine
+"""
+
+# Author:
+# Lajos Neto <lajosneto@gmail.com>
+
+
 import cv2
 import numpy as np
 
 from detector import DNNFaceDetector, ExpressionDetector
-
-from tensorflow import keras
+from utils.plot_utils import generate_probs_plot, apply_probs_overlay
 
 
 def gen_frame(camera, face_mode, expression_model):
@@ -11,7 +18,7 @@ def gen_frame(camera, face_mode, expression_model):
         ret,frame = camera.read()
         box, face = face_mode.run(frame)
         predicted_label, predictions = expression_model.run(face)
-        print(predicted_label)
+        apply_probs_overlay(box, predictions[0])
         return box
 
 
