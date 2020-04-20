@@ -1,20 +1,20 @@
 ![alt text](https://res.cloudinary.com/lajosneto/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1586140913/mask-shop/bg.png)
 # マスクショップ - mask shop
 
-### What
+## What
 
 <br>
 
-### Current models
+## Current models
 ![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587333187/mask-shop/current-models.png)
 
 <br>
 
-### Demo
+## Demo
 
 <br>
 
-### Datasets
+## Datasets
 This project was possible thanks to the work of several researchers that made excellent datasets available to the community!
 
 Currently used datasets :
@@ -22,11 +22,11 @@ Currently used datasets :
 
 <br>
 
-### Roadmap
+## Roadmap
 
 <br>
 
-### Known issues
+## Known issues
 
 <br>
 
