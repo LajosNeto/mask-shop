@@ -18,8 +18,8 @@ LABELS = {0:'angry', 1:'disgust', 2:'fear', 3:'happy', 4:'sad', 5:'surprise', 6:
 
 class DNNFaceDetector():
     def __init__(self):
-        model_file = 'utils/opencv_face_detector_uint8.pb'
-        config_file = 'utils/opencv_face_detector.pbtxt'
+        model_file = 'model_output/opencv_face_detector_uint8.pb'
+        config_file = 'model_output/opencv_face_detector.pbtxt'
         self.net = cv2.dnn.readNetFromTensorflow(model_file, config_file)
     
     def run(self, image):
