@@ -5,11 +5,30 @@
 
 <br>
 
+### Current models
+![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587333187/mask-shop/current-models.png)
+
+<br>
+
+### Demo
+
+<br>
+
+### Datasets
+This project was possible thanks to the work of several researchers that made excellent datasets available to the community!
+
+Currently used datasets :
+- __FER-2013__ by __Pierre-Luc Carrier and Aaron Courville__ (https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
+
+<br>
+
 ### Roadmap
 
 <br>
 
 ### Known issues
+
+<br>
 
 
 
