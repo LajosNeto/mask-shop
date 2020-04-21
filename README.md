@@ -8,6 +8,18 @@
 ## Current models
 ![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587333187/mask-shop/current-models.png)
 
+#### Lenet-5
+![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587502494/mask-shop/model-lenet-5.png)
+
+#### Custom-1
+![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587502527/mask-shop/model-custom-1.png)
+
+#### Custom-2
+![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587502552/mask-shop/model-custom-2.png)
+
+#### Custom-3
+![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587502585/mask-shop/model-custom-3.png)
+
 <br>
 
 ## Demo
