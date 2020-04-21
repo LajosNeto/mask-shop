@@ -37,9 +37,8 @@ class DNNFaceDetector():
         return (box_image, face_image)
 
 class ExpressionDetector():
-    def __init__(self):
-        model_file = 'model_output/face_detection.h5'
-        self.net = keras.models.load_model(model_file)
+    def __init__(self, model):
+        self.model = model
     
     def pre_process(self, image):
         image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -50,6 +49,6 @@ class ExpressionDetector():
     
     def run(self, image):
         image = self.pre_process(image)
-        predictions = self.net.predict(image)
+        predictions = self.model.predict(image)
         predicted_label =  LABELS.get(np.argmax(predictions))
         return (predicted_label, predictions)

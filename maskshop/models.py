@@ -6,22 +6,28 @@ Facial expression detection models
 # Lajos Neto <lajosneto@gmail.com>
 
 
+from tensorflow import keras
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPool2D, AvgPool2D, Dropout, Flatten, Activation, ReLU, BatchNormalization
 
 
 MODELS = ['lenet_5', 'custom_1', 'custom_2', 'custom_3']
 
+
 def list_models(): 
     return MODELS
 
-def build_model(name):
+def load_model_h5(model_name):
+    return __default() if model_name not in MODELS else keras.models.load_model(f"model_output/{model_name}.h5")
+
+
+def build_model(model_name):
     return {
         'lenet_5': __build_lenet5,
         'custom_1': __build_custom1,
         'custom_2': __build_custom2,
         'custom_3': __build_custom3
-    }.get(name, __default)()
+    }.get(model_name, __default)()
 
 def __default():
     return None
