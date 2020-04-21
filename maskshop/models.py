@@ -27,7 +27,7 @@ def __default():
     return None
 
 def __build_lenet5():
-    model = Sequential(name='LeNet-5')
+    model = Sequential(name='lenet_5')
 
     model.add(Conv2D(6, (5,5), strides=(1,1), input_shape=(48,48,1), name='C1', activation='relu'))    
     model.add(AvgPool2D(pool_size=(2,2), name='S2'))
@@ -47,7 +47,7 @@ def __build_lenet5():
     return model
 
 def __build_custom1():
-    model = Sequential(name='Custom 1')
+    model = Sequential(name='custom_1')
 
     model.add(Conv2D(64, (3,3), strides=(1,1), input_shape=(48,48,1), activation='relu'))
     model.add(Conv2D(64, (3,3), strides=(1,1), activation='relu'))
