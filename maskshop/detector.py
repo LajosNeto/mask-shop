@@ -34,7 +34,7 @@ class DNNFaceDetector():
         face_image = image[startY:endY, startX:endX]
         # draw rectangle around detected face (original image)
         box_image = cv2.rectangle(image,(startX,startY),(endX,endY),(255,0,0),2)
-        return (box_image, face_image)
+        return (box_image, face_image, (startX, startY, endX, endY))
 
 class ExpressionDetector():
     def __init__(self, model):
@@ -50,5 +50,5 @@ class ExpressionDetector():
     def run(self, image):
         image = self.pre_process(image)
         predictions = self.model.predict(image)
-        predicted_label =  LABELS.get(np.argmax(predictions))
+        predicted_label = np.argmax(predictions)
         return (predicted_label, predictions)
