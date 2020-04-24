@@ -2,6 +2,11 @@
 # マスクショップ - mask shop
 
 ## What
+This is a side project used to practice and learn more about CNN!
+
+There is a Jupyter notebook that describes a little about the research and learning process for this project!
+
+Note that this is a project that will be evolving with the time as I learn new things about CNNs!
 
 <br>
 
@@ -23,6 +28,19 @@
 <br>
 
 ## Demo
+`python run.py --model custom_3`
+
+<br>
+
+![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587691970/mask-shop/demo-mask.png)
+
+<br>
+
+`python run.py --model custom_3 --debug`
+
+<br>
+
+![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1587691970/mask-shop/demo-debug.png)
 
 <br>
 
