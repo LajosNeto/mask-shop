@@ -44,7 +44,6 @@ Currently used datasets :
 
 
 
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-Image rights belong to Nintendo (https://www.nintendo.com/)
+><br><br><br><br><br><br><br><br><br>
+- Image rights belong to Nintendo (https://www.nintendo.com/)
+- Mask icons made by https://www.flaticon.com/authors/pixel-perfect / Pixel perfect from Flaticon www.flaticon.com
